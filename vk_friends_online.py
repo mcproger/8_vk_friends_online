@@ -13,9 +13,9 @@ def get_user_password():
     return user_password
 
 
-def get_vk_api_session(APP_ID, login, password):
+def get_vk_api_session(app_id, login, password):
     session = vk.AuthSession(
-        app_id=APP_ID,
+        app_id=app_id,
         user_login=login,
         user_password=password,
         scope='friends'
