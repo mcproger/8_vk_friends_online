@@ -1,6 +1,23 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+This scripts shows list of online friends of user on [VK.COM](https://vk.com). To use, you should enter your login and password.
+
+
+# Using
+
+```
+$ python3 vk_friends_online.py
+  
+  Enter login from vk.com: <login>
+  Enter password from vk.com: <password> (Don't worry, it will be invisible)
+  
+  Юра Старовойт
+  Тимур Федоткин
+  Максим Гречишкин
+  Марина Венецкая
+  ...
+```
+
 
 # How to Install
 
