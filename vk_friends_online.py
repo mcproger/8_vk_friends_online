@@ -41,10 +41,10 @@ def output_friends_to_console(vk_api, online_friend_id):
 
 
 if __name__ == '__main__':
-    APP_ID = -1  # чтобы получить app_id, нужно зарегистрировать своё приложение на https://vk.com/dev
+    app_id = -1  # чтобы получить app_id, нужно зарегистрировать своё приложение на https://vk.com/dev
     login = get_user_login()
     password = get_user_password()
-    vk_api = get_vk_api_session(APP_ID, login, password)
+    vk_api = get_vk_api_session(app_id, login, password)
     online_friends_id_list = get_online_friends_id_list(vk_api)
     for online_friend_id in online_friends_id_list:
         print(output_friends_to_console(vk_api, online_friend_id))
