@@ -31,7 +31,8 @@ def get_online_friends_id_list(vk_api):
 
 def output_friends_to_console(vk_api, online_friend_id):
     online_friend_info = vk_api.users.get(user_ids=online_friend_id)
-    time.sleep(0.5) # Fix too many requests exception
+    too_many_requests_time_delay = 0.5
+    time.sleep(too_many_requests_time_delay)
     online_friend = '{first_name} {last_name}'.format(
         first_name=online_friend_info[0]['first_name'],
         last_name=online_friend_info[0]['last_name']
