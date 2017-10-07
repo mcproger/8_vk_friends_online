@@ -1,6 +1,5 @@
 import vk
 import getpass
-import time
 import argparse
 
 
