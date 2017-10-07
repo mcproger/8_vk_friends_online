@@ -31,7 +31,7 @@ def get_vk_api_session(app_id, login, password):
     return api
 
 
-def output_friend_to_console(online_friend_info):
+def format_output_online_friend(online_friend_info):
     online_friend = '{first_name} {last_name}'.format(
         first_name=online_friend_info['first_name'],
         last_name=online_friend_info['last_name'],
@@ -48,4 +48,4 @@ if __name__ == '__main__':
     online_friends_id_list = vk_api.friends.getOnline()
     online_friends_info = vk_api.users.get(user_ids=online_friends_id_list)
     for online_friend_info in online_friends_info:
-        print(output_friend_to_console(online_friend_info))
+        print(format_output_online_friend(online_friend_info))
