@@ -6,7 +6,7 @@ This scripts shows list of online friends of user on [VK.COM](https://vk.com). T
 # Using
 
 ```
-$ python3 vk_friends_online.py
+$ python3 vk_friends_online.py <vk app id>
   
   Enter login from vk.com: <login>
   Enter password from vk.com: <password> (Don't worry, it will be invisible)
